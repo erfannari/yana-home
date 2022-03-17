@@ -1,0 +1,25 @@
+<div class="store-section">
+  <div class="product-box" *ngFor="let products of productList ">
+    <img [src]="products.image" alt="image">
+    <div class="price">
+      <span class="discount">
+        {{products.discount}}
+      </span>
+      <span class="product-price">
+        {{products.price}}
+      </span>
+    </div>
+    <div class="rating">
+      <img [src]="products.star" alt="star">
+      <span>{{products.rating}}</span>
+    </div>
+    <div class="description">
+      <div class="add-icon">
+        <img (click)="redHeart()" id="heart-icon" [src]="products.heart" alt="heart" />
+      </div>
+      <span>
+        {{products.description}}
+      </span>
+    </div>
+  </div>
+</div>

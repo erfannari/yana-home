@@ -1,0 +1,172 @@
+@font-face {
+  font-family: iranSans;
+  src: url("./assets/Fonts/iranSans/iranSans/ttf/IRANSansWeb_Light.ttf");
+}
+@font-face {
+  font-family: Dosis-semiBold;
+  src: url("./assets/Fonts/Dosis/static/Dosis-SemiBold.ttf");
+}
+@font-face {
+  font-family: Dosis-Medium;
+  src: url("./assets/Fonts/Dosis/static/Dosis-Medium.ttf");
+}
+@font-face {
+  font-family: yekan;
+  src: url("./assets/Fonts/yekan-web/yekan.ttf");
+}
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff !important;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  overflow: scroll;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #212121;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff1e00;
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  cursor: default;
+  user-select: none;
+}
+
+h1, h2, h3, h4, h5, span {
+  user-select: none;
+}
+
+/* SCSS HEX */
+/* SCSS HSL */
+/* SCSS RGB */
+/* SCSS Gradient */
+.navbar {
+  background-color: #ffff;
+  direction: rtl !important;
+  padding: 0 !important;
+}
+
+.collapse {
+  margin: 0 2rem;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  color: #212121;
+  font-family: iranSans, sans-serif;
+  cursor: default;
+  align-items: center;
+  transition-duration: 0.3s;
+}
+.navbar-brand:hover {
+  color: #c9a484;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.nav-item {
+  padding: 10px 20px;
+  font-family: iranSans, sans-serif;
+  margin: 0 !important;
+}
+
+.nav-item a {
+  font-size: 0.85rem;
+  padding: 0;
+  color: #212121;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.nav-item a:hover, .icons .nav-item a:hover {
+  color: #c9a484;
+  transform: scale(1.1);
+}
+
+.dropdown-menu {
+  padding: 20px 10px;
+}
+.dropdown-menu li {
+  padding: 5px 0;
+  margin: 10px 0;
+  background-color: gray;
+}
+.dropdown-menu :active {
+  transition: opacity 0.3s;
+}
+
+.dropdown-item {
+  text-shadow: none;
+}
+.dropdown-item:hover {
+  background-color: #c9a484;
+  color: #ffff;
+  transition-duration: 0.5s;
+}
+
+.form-control {
+  font-size: 0.8rem;
+  font-family: iranSans, sans-serif;
+  padding-right: 0.5rem;
+  text-align: right;
+  border-color: #c9a484;
+}
+.form-control:focus {
+  box-shadow: none;
+  border-color: #c9a484;
+}
+
+.btn {
+  font-size: 0.8rem;
+  border: 1px solid #c9a484;
+  color: #c9a484;
+  font-family: iranSans, sans-serif;
+}
+.btn:hover {
+  background-color: #c9a484;
+  color: white;
+}
+
+.icons {
+  width: 15px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .nav-item {
+    font-size: 0.8rem;
+    padding: 0 8px;
+  }
+
+  .search {
+    width: 35%;
+    justify-content: flex-end;
+  }
+
+  .inner-search {
+    width: 55%;
+  }
+}
+
+/*# sourceMappingURL=header.component.css.map */

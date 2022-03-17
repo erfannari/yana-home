@@ -1,0 +1,111 @@
+<div class="cock-pit">
+  <img class="login-back mt-2" src="../../../assets/images/login-back3.jpg" alt="">
+  <div class="login">
+    <div class="enter-text">
+      <span>ثبت نام</span>
+    </div>
+    <form class="form">
+      <div class="inputs">
+        <div class="input-box">
+          <div class="input-filed form-group ">
+            <label for="email" class="labels">
+              <span class="label-text">
+                نام
+              </span>
+              <input type="text" class="entry" placeholder="نام" id="firstName" />
+            </label>
+          </div>
+          <div class="input-filed form-group ">
+            <label for="email" class="labels">
+              <span class="label-text">
+                شماره تماس
+              </span>
+              <input type="number" class="entry-num" placeholder="شماره تماس" id="phoneNum"/>
+            </label>
+          </div>
+          <div class="input-filed form-group">
+            <label for="password" class="labels">
+              <span class="label-text">
+                گذرواژه
+              </span>
+              <input type="password" class="entry" placeholder="گذرواژه" id="password"/>
+            </label>
+          </div>
+        </div>
+        <div class="input-box">
+          <div class="input-filed form-group">
+            <label for="password" class="labels">
+              <span class="label-text">
+                نام خانوادگی
+              </span>
+              <input type="text" class="entry" placeholder="نام خانوادگی" id="lastName"/>
+            </label>
+          </div>
+          <div class="input-filed form-group">
+            <label for="password" class="labels">
+              <span class="label-text">
+                ایمیل
+              </span>
+              <input type="email" class="entry" placeholder="ایمیل" id="email" name="password"/>
+            </label>
+          </div>
+          <div class="input-filed form-group">
+            <label for="password" class="labels">
+              <span class="label-text">
+                تکرار گذرواژه
+              </span>
+              <input type="password" class="entry" placeholder="  تکرار گذرواژه " id="reapet-password"/>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="more-option my-4">
+        <label class="option-text">
+          <p>
+            نشان دادن گذرواژه
+          </p>
+          <input (click)="showPassword()" id="passShow" class="pass-checkbox" type="checkbox" />
+        </label>
+        <label class="option-text">
+          <span>
+             با قوانین و مقررات سایت موافقم 
+          </span>
+          <input id="passShow" class="pass-checkbox" type="checkbox" />
+        </label>
+      </div>
+      <div class="submit-area">
+        <button class="submit-button" id="signUp-btn" type="submit">
+          ثبت نام
+        </button>
+      </div>
+    </form>
+    <div class="or">
+      <span>یا</span>
+    </div>
+    <div class="login-option">
+      <div class="login-icon">
+        <a href="https://www.google.com">
+          <img src="../../../assets/icons/google-svgrepo-com.svg" alt="">
+        </a>
+      </div>
+      <div class="login-icon">
+        <a href="https://www.google.com">
+          <img src="../../../assets/icons/facebook-svgrepo-com.svg" alt="">
+        </a>
+      </div>
+      <div class="login-icon">
+        <a href="https://www.google.com">
+          <img src="../../../assets/icons/spotify-svgrepo-com.svg" alt="">
+        </a>
+      </div>
+    </div>
+    <div class="sign-up">
+      <span>
+        حساب کاربری دارید؟
+        <a routerLink="/login">
+          وارد شوید
+        </a>
+      </span>
+    </div>
+  </div>
+</div>

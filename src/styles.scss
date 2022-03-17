@@ -1,0 +1,208 @@
+//********Fonts
+@font-face {
+  font-family: iranSans;
+  src: url("./assets/Fonts/iranSans/iranSans/ttf/IRANSansWeb_Light.ttf");
+}
+
+@font-face {
+  font-family: Dosis-semiBold;
+  src: url("./assets/Fonts/Dosis/static/Dosis-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: Dosis-Medium;
+  src: url("./assets/Fonts/Dosis/static/Dosis-Medium.ttf");
+}
+
+@font-face {
+  font-family: yekan;
+  src: url("./assets/Fonts/yekan-web/yekan.ttf");
+}
+@font-face {
+  font-family: Cinzel;
+  src: url("./assets/Fonts/Cinzel/static/Cinzel-Bold.ttf");
+}
+
+@font-face {
+  font-family: Pacifico;
+  src: url("./assets/Fonts/Pacifico/Pacifico-Regular.ttf");
+}
+//********Fonts END
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.container {
+  padding: 0 1rem !important;
+}
+
+body {
+  background-color: #d3c9cc !important;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  overflow: scroll;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+//******Scroll
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #212121;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsla(28, 39%, 65%, 1);
+  border-radius: 5px;
+}
+
+//******Scroll END
+a {
+  text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+span {
+  cursor: default;
+  user-select: none;
+}
+
+//******Colors
+
+//******  CLASSIC PALLET
+$rawGold: #ffcb74;
+$pureGold: #ffd700;
+$smoothGray: #f6f6f6;
+$coal: #2f2f2f;
+$burnedCoal: #111111;
+$darkerGray: #d3c9cc;
+//****** END CLASSIC PALLET
+$pureGold: #ffd700;
+$sunSet: #ff1e00;
+$slowBlack: #212121;
+$GoogleRed: #ff0000;
+$GoogleRedDark: #c5161c;
+$youtube: #ff0000;
+$DeepOcean: #1f7cc9;
+$DeepOceanDark: #2792e9;
+$WhiteFridge: #ffff;
+$lightWhite: #dddddd;
+$deepGold: #fd7014;
+$lightGray: #222831;
+$magicalPurple: #522546;
+$sunPink: #e23e57;
+$hardYellow: #f6c90e;
+$DeepPurpleGradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+//******Colors END
+
+//***** YANA HOME COLOR PALLET
+
+/* SCSS HEX */
+$tumbleweed: #c9a484ff;
+$camel: #b9905aff;
+$coyote-brown: #7f6141ff;
+$dark-brown: #6c4c26ff;
+$dark-brown-2: #60411dff;
+
+/* SCSS HSL */
+$tumbleweed: hsla(28, 39%, 65%, 1);
+$camel: hsla(34, 40%, 54%, 1);
+$coyote-brown: hsla(31, 32%, 38%, 1);
+$dark-brown: hsla(33, 48%, 29%, 1);
+$dark-brown-2: hsla(32, 54%, 25%, 1);
+
+/* SCSS RGB */
+$tumbleweed: rgba(201, 164, 132, 1);
+$camel: rgba(185, 144, 90, 1);
+$coyote-brown: rgba(127, 97, 65, 1);
+$dark-brown: rgba(108, 76, 38, 1);
+$dark-brown-2: rgba(96, 65, 29, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(
+  0deg,
+  #c9a484ff,
+  #b9905aff,
+  #7f6141ff,
+  #6c4c26ff,
+  #60411dff
+);
+$gradient-right: linear-gradient(
+  90deg,
+  #c9a484ff,
+  #b9905aff,
+  #7f6141ff,
+  #6c4c26ff,
+  #60411dff
+);
+$gradient-bottom: linear-gradient(
+  180deg,
+  #c9a484ff,
+  #b9905aff,
+  #7f6141ff,
+  #6c4c26ff,
+  #60411dff
+);
+$gradient-left: linear-gradient(
+  270deg,
+  #c9a484ff,
+  #b9905aff,
+  #7f6141ff,
+  #6c4c26ff,
+  #60411dff
+);
+$gradient-top-right: linear-gradient(
+  45deg,
+  #c9a484ff,
+  #b9905aff,
+  #7f6141ff,
+  #6c4c26ff,
+  #60411dff
+);
+$gradient-bottom-right: linear-gradient(
+  135deg,
+  #c9a484ff,
+  #b9905aff,
+  #7f6141ff,
+  #6c4c26ff,
+  #60411dff
+);
+$gradient-top-left: linear-gradient(
+  225deg,
+  #c9a484ff,
+  #b9905aff,
+  #7f6141ff,
+  #6c4c26ff,
+  #60411dff
+);
+$gradient-bottom-left: linear-gradient(
+  315deg,
+  #c9a484ff,
+  #b9905aff,
+  #7f6141ff,
+  #6c4c26ff,
+  #60411dff
+);
+$gradient-radial: radial-gradient(
+  #c9a484ff,
+  #b9905aff,
+  #7f6141ff,
+  #6c4c26ff,
+  #60411dff
+);

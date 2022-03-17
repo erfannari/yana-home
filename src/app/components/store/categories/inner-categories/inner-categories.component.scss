@@ -1,0 +1,75 @@
+@import "../../../../../../src/styles";
+.inner-categories {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 10rem 0;
+  .cushion-img {
+    position: relative;
+    overflow: hidden;
+    max-height: 30rem;
+    max-width: 35rem;
+    border-radius: 10px;
+    .side-text {
+      max-height: 7rem;
+      max-width: 17rem;
+      background: rgba(158, 158, 158, 0.65);
+      backdrop-filter: blur(3.5px);
+      -webkit-backdrop-filter: blur(3.5px);
+      position: absolute;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0 50px 0 0;
+      transition: all 0.3s ease-in-out;
+      span {
+        font-size: 3.5rem;
+        font-family: "Pacifico";
+        padding: 1rem 3rem;
+        color: $pureGold;
+      }
+    }
+    img {
+      height: 30rem;
+      width: 35rem;
+      border-radius: 10px;
+      transition: all 0.4s ease-in-out;
+      &:hover {
+        transform: scale(1.1);
+        // filter: blur(3px);
+        filter: brightness(0.7);
+        cursor: pointer;
+      }
+    }
+  }
+  .user-intract {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    span {
+      font-size: 2.5rem;
+      line-height: 3;
+      font-weight: bold;
+      font-family: "yekan";
+      margin: 3rem 0;
+    }
+    .btn {
+      border: #2f2f2f solid 0.1rem;
+      width: 40%;
+      align-self: center;
+      color: #2f2f2f;
+      font-family: "yekan";
+      font-weight: bold;
+      padding: 0.3rem 0.3rem 0.5rem 0.3rem;
+      transition: all 0.4s ease-in-out;
+      &:hover {
+        background-color: $burnedCoal;
+        color: $pureGold;
+        transform: scale(1.03);
+      }
+    }
+  }
+}

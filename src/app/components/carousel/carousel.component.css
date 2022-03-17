@@ -1,0 +1,95 @@
+@font-face {
+  font-family: iranSans;
+  src: url("./assets/Fonts/iranSans/iranSans/ttf/IRANSansWeb_Light.ttf");
+}
+@font-face {
+  font-family: Dosis-semiBold;
+  src: url("./assets/Fonts/Dosis/static/Dosis-SemiBold.ttf");
+}
+@font-face {
+  font-family: Dosis-Medium;
+  src: url("./assets/Fonts/Dosis/static/Dosis-Medium.ttf");
+}
+@font-face {
+  font-family: yekan;
+  src: url("./assets/Fonts/yekan-web/yekan.ttf");
+}
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff !important;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  overflow: scroll;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #212121;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff1e00;
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  cursor: default;
+  user-select: none;
+}
+
+h1, h2, h3, h4, h5, span {
+  user-select: none;
+}
+
+/* SCSS HEX */
+/* SCSS HSL */
+/* SCSS RGB */
+/* SCSS Gradient */
+.images {
+  height: 30rem;
+  filter: brightness(0.8);
+  transition-duration: 1s;
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  color: #ffff;
+  background-color: #212121;
+}
+
+.transition-add {
+  animation: opacity 0.3s;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+    transition-duration: 0.3s;
+  }
+  100% {
+    opacity: 1;
+    transition-duration: 0.3s;
+  }
+}
+
+/*# sourceMappingURL=carousel.component.css.map */
