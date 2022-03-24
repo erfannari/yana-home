@@ -154,7 +154,8 @@
   overflow: hidden;
   &:hover {
     .gif {
-      filter: brightness(0.8);
+      // filter: brightness(0.8);
+      filter: blur(3px);
       transform: scale(1.2);
     }
   }

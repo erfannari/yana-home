@@ -1,0 +1,44 @@
+@import "../../../../../src/styles";
+.trending-title {
+  text-align: center;
+  margin-bottom: 5rem;
+  span {
+    font-size: 3.5rem;
+    font-family: "yekan";
+    font-weight: bold;
+    color: $slowBlack;
+  }
+}
+
+.trending-section {
+  margin: 0 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  .trending-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    img {
+      height: 20rem;
+      width: 20rem;
+      border-radius: 10px;
+    }
+    .items-name {
+        margin-top: 1.5rem;
+        font-family: "yekan";
+        font-size: 1.5rem;
+        align-self: flex-end;
+    }
+    .items-info {
+      align-self: flex-end;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: flex-end;
+      text-align: right;
+    }
+  }
+}

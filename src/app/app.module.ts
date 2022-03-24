@@ -14,6 +14,7 @@ import { LoginComponent } from './components/login/login.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { InnerCategoriesComponent } from './components/store/categories/inner-categories/inner-categories.component';
+import { TrendingComponent } from './components/store/trending/trending.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { InnerCategoriesComponent } from './components/store/categories/inner-ca
     LoginComponent,
     HeroComponent,
     SignUpComponent,
-    InnerCategoriesComponent
+    InnerCategoriesComponent,
+    TrendingComponent
   ],
   imports: [
     BrowserModule ,

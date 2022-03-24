@@ -1,19 +1,21 @@
-<div class="inner-categories">
+<div class="for" *ngFor="let category of innerCategories">
+  <div class="inner-categories">
     <div class="cushion-img d-flex">
-      <img src="../../../../assets/images/optimizes-images/cushion2.jpg" alt="">
+      <img [src]="category.image" alt="">
       <div class="side-text">
         <span>
-          Cushions
+          {{category.categoryName}}
         </span>
       </div>
     </div>
     <div class="user-intract">
       <span>
-        خودت را با بهترین ها <br>
-        به یک لحظه خوش مهمان کن
+      {{category.categoryDescription}}
       </span>
       <button routerLink="/login" class="btn">
         خرید
       </button>
     </div>
   </div>
+
+</div>
