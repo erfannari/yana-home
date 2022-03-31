@@ -19,7 +19,7 @@
   justify-content: center;
   align-items: center;
   span {
-    font-family: "yekan";
+    font-family: iranSans;
     font-size: 3rem;
     letter-spacing: 1px;
     font-weight: bold;
@@ -53,13 +53,13 @@
   flex-wrap: wrap;
   flex-direction: column;
   .label-text {
-    font-family: "yekan";
+    font-family: iranSans;
     font-weight: bold;
     margin: 1rem 0;
     opacity: 0.9;
   }
   ::placeholder {
-    font-family: "yekan";
+    font-family: iranSans;
     font-size: 0.75rem;
     letter-spacing: 1px;
   }
@@ -71,7 +71,7 @@
   outline: none;
   border-radius: 3px;
   font-family: "Dosis-semiBold";
-  font-family: "yekan";
+  font-family: iranSans;
   letter-spacing: 1px;
   opacity: 0.9;
   background-color: $lightWhite;
@@ -91,7 +91,7 @@
   justify-content: flex-end;
   margin: 0.7rem 0;
   p {
-    font-family: "yekan";
+    font-family: iranSans;
     margin: 0;
     font-size: 0.75rem;
     letter-spacing: 0.5px;
@@ -99,7 +99,7 @@
     font-weight: bold;
   }
   span {
-    font-family: "yekan";
+    font-family: iranSans;
     margin: 0;
     font-size: 0.75rem;
     letter-spacing: 0.5px;
@@ -123,7 +123,7 @@
   // background: linear-gradient(to right, #ffe000, #799f0c);
   border-radius: 15px;
   padding: 5px 0px 10px 0;
-  font-family: "yekan";
+  font-family: iranSans;
   color: #ffffff;
   &:hover {
     animation: pulse 1.8s infinite;
@@ -160,7 +160,7 @@
   margin-bottom: 1rem;
   span {
     font-size: 0.9rem;
-    font-family: "yekan";
+    font-family: iranSans;
     opacity: 0.9;
   }
 }
@@ -168,7 +168,7 @@
   text-align: center;
   margin: 1rem 0;
   span {
-    font-family: "yekan";
+    font-family: iranSans;
     font-size: 0.7rem;
     font-weight: bold;
     opacity: 0.8;

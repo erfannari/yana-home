@@ -1,2 +1,5 @@
 <app-header></app-header>
-<router-outlet></router-outlet>
+<router-outlet (activate)="onActivate($event)"></router-outlet>
+<div (click)="scrollTop($event)" class="scroll-top">
+  <button class="scroll-btn">بازگشت به بالا</button>
+</div>

@@ -1,1 +1,38 @@
-<p>footer works!</p>
+<div class="container-fluid">
+  <div class="footer">
+    <div class="motto">
+      You Are Not Alone
+    </div>
+    <div class="yana-info">
+      <div class="yana-home">
+        Yana Home
+      </div>
+      <div class="number-info">
+        <span class="sup-number">
+          021 - ******* : تلفن پشتیبانی
+          <span>
+            7 روز هفته 24 ساعته پاسخگو هستیم
+          </span>
+        </span>
+      </div>
+      <div class="social-media">
+        <span>
+          !همراه ما باشید
+        </span>
+        <div class="social-icons">
+          <a href="" *ngFor=" let icons of socialIcons">
+            <img routerLink="/hero" [src]="icons.socialicon" [alt]=" icons.altName">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="advantages">
+    <div class="icons" *ngFor="let iconList of footerIcons">
+      <img [src]="iconList.iconImage" [alt]="iconList.iconName">
+      <span>
+        {{iconList.iconName}}
+      </span>
+    </div>
+  </div>
+</div>

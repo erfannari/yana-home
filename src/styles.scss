@@ -16,7 +16,8 @@
 
 @font-face {
   font-family: yekan;
-  src: url("./assets/Fonts/yekan-web/yekan.ttf");
+  src: url("./assets/Fonts/iranSans/iranSans/ttf/IRANSansWeb_Light.ttf");
+
 }
 @font-face {
   font-family: Cinzel;
@@ -32,19 +33,46 @@
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  // user-select: none;
+  ::selection {
+    background-color: #60411dff;
+    color: #f6f6f6;
+    font-weight: normal;
+}
+
 }
 .container {
   padding: 0 1rem !important;
 }
 
 body {
-  background-color: #d3c9cc !important;
+  background-image: url('assets/images/movingBack.png');
+  // background-color: #ffff;
+  // background-image: linear-gradient(
+  //   to bottom right,
+  //   #ff9a9e 0%,
+  //   #fdcbf1 40%,
+  //   #fecfef 60%,
+  //   #e6dee9 100%
+  // );
+  animation: movingGradiant 1200s linear infinite alternate;
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
   overflow: scroll;
 }
 
+@keyframes movingGradiant {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
 img {
   height: 100%;
   width: 100%;
@@ -71,17 +99,6 @@ a {
   text-decoration: none;
 }
 
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-span {
-  cursor: default;
-  user-select: none;
-}
-
 //******Colors
 
 //******  CLASSIC PALLET
@@ -92,6 +109,7 @@ $coal: #2f2f2f;
 $burnedCoal: #111111;
 $darkerGray: #d3c9cc;
 //****** END CLASSIC PALLET
+$opacityColor: #424750;
 $pureGold: #ffd700;
 $sunSet: #ff1e00;
 $slowBlack: #212121;
@@ -109,6 +127,11 @@ $sunPink: #e23e57;
 $hardYellow: #f6c90e;
 $DeepPurpleGradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 
+/* Glass Effect
+background-color: #ffffff10;
+backdrop-filter: blur(5px);
+/*
+
 //******Colors END
 
 //***** YANA HOME COLOR PALLET
@@ -119,20 +142,6 @@ $camel: #b9905aff;
 $coyote-brown: #7f6141ff;
 $dark-brown: #6c4c26ff;
 $dark-brown-2: #60411dff;
-
-/* SCSS HSL */
-$tumbleweed: hsla(28, 39%, 65%, 1);
-$camel: hsla(34, 40%, 54%, 1);
-$coyote-brown: hsla(31, 32%, 38%, 1);
-$dark-brown: hsla(33, 48%, 29%, 1);
-$dark-brown-2: hsla(32, 54%, 25%, 1);
-
-/* SCSS RGB */
-$tumbleweed: rgba(201, 164, 132, 1);
-$camel: rgba(185, 144, 90, 1);
-$coyote-brown: rgba(127, 97, 65, 1);
-$dark-brown: rgba(108, 76, 38, 1);
-$dark-brown-2: rgba(96, 65, 29, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(

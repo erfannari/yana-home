@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
+// import { SwiperModule } from 'swiper/angular';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { StoreComponent } from './components/store/store.component';
@@ -15,8 +16,8 @@ import { HeroComponent } from './components/hero/hero.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { InnerCategoriesComponent } from './components/store/categories/inner-categories/inner-categories.component';
 import { TrendingComponent } from './components/store/trending/trending.component';
-
-
+import { UserProfileComponent } from './components/user-profile/user-profile.component';
+import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,14 +32,17 @@ import { TrendingComponent } from './components/store/trending/trending.componen
     HeroComponent,
     SignUpComponent,
     InnerCategoriesComponent,
-    TrendingComponent
+    TrendingComponent,
+    UserProfileComponent,
+    ShoppingCartComponent,
   ],
   imports: [
-    BrowserModule ,
+    BrowserModule,
     AppRoutingModule,
     CommonModule,
+    // [SwiperModule]
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

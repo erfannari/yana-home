@@ -1,67 +1,180 @@
 <div class="container-fluid p-0 m-0">
-  <nav class="navbar navbar-expand-lg navbar-white px-0 ">
-    <a class="navbar-brand mx-3" routerLink="/hero">یانا هوم</a>
-    <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-      <ul class="navbar-nav px-0">
-        <li class="nav-item dropdown">
-          <a class="nav-link-hover" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            <img class="icons" src="../../../assets/icons/hamburger-menu-svgrepo-com.svg" alt="sug">
+  <nav class="Navbar p-0 ">
+    <div routerLink="/hero" class="navbar-brand">
+      <h3>
+        yana-home
+      </h3>
+    </div>
+    <div class="navbar-links">
+      <ul class="navbar-ul">
+        <li class="navbar-li">
+          <a>
             دسته بندی کالا ها
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li class="dropdown-content">
-              <a href="#">محبوب ترین ها</a>
-              <a href="#">محبوب ترین ها</a>
-              <a href="#">محبوب ترین ها</a>
-              <a href="#">محبوب ترین ها</a>
-              <a href="#">محبوب ترین ها</a>
-              <a href="#">محبوب ترین ها</a>
-              <a href="#">محبوب ترین ها</a>
-              <a href="#">محبوب ترین ها</a>
-              <a href="#">محبوب ترین ها</a>
-              <a href="#">محبوب ترین ها</a>
-              <a href="#">محبوب ترین ها</a>
-              <a href="#">محبوب ترین ها</a>
-              <a href="#">محبوب ترین ها</a>
-              <a href="#">محبوب ترین ها</a>
-              <a href="#">محبوب ترین ها</a>
-              <a href="#"> ترین ها</a>
+          <img class="icons" src="../../../assets/icons/header/hamburger-menu-svgrepo-com.svg" alt="sug">
+          <ul class="navbar-drop">
+            <li class="drop-items">
+              <a>
+                drop 1
+              </a>
+            </li>
+            <li class="drop-items">
+              <a>
+                drop 2
+              </a>
+            </li>
+            <li class="drop-items">
+              <a>
+                drop 3
+              </a>
+            </li>
+            <li class="drop-items">
+              <a>
+                drop 4
+              </a>
             </li>
           </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            <img class="icons" src="../../../assets/icons/discount-svgrepo-com.svg" alt="sug">
+        <li class="navbar-li">
+          <a>
             تخفیف ها و پیشنهاد ها
           </a>
+          <img class="icons" src="../../../assets/icons/header/discount-svgrepo-com.svg" alt="sug">
         </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/Auth">
-            <img class="icons" src="../../../assets/icons/discount2.svg" alt="amaz">
+        <li class="navbar-li">
+          <a>
             شگفت انگیز ها
           </a>
+          <img class="icons" src="../../../assets/icons/header/discount2.svg" alt="amaz">
         </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/sign-up">
-            <img class="icons" src="../../../assets/icons/info-svgrepo-com.svg" alt="about">
+        <li class="navbar-li">
+          <a routerLink="/userProfile">
             درباره ی یانا هوم
           </a>
+          <img class="icons" src="../../../assets/icons/header/info-svgrepo-com.svg" alt="about">
         </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/login">
-            <img class="icons" src="../../../assets/icons/user-svgrepo-com.svg" alt="user">
+        <li class="navbar-li">
+          <a routerLink="/login">
             ورود / ثبت نام
           </a>
+          <img class="icons" src="../../../assets/icons/header/user-svgrepo-com.svg" alt="user">
+        </li>
+        <li class="navbar-li">
+          <a routerLink="/shoppingCart">
+            سبد خرید
+          </a>
+          <img class="icons" src="../../../assets/icons/header/shopping-cart-svgrepo-com.svg" alt="user">
         </li>
       </ul>
-      <form class="d-flex search">
-        <input class="form-control mx-2 inner-search" type="search" placeholder="جستجو در محصولات" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">جستجو</button>
+    </div>
+    <div class="navbar-search">
+      <form class="d-flex justify-content-start">
+        <input class="serach-input" type="search" placeholder="جستجو در محصولات" aria-label="Search">
+        <button class="Btn" type="submit">جستجو</button>
       </form>
     </div>
   </nav>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--***********-->
+
+<!-- <img class="logo" src="../../../assets/icons/logo.svg" alt="yana-home">
+<a class="navbar-brand mx-3" routerLink="/hero">Yana Home</a>
+<div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+  <ul class="navbar-nav px-0">
+    <li class="nav-item dropdown">
+      <a class="nav-link-hover" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        <img class="icons" src="../../../assets/icons/hamburger-menu-svgrepo-com.svg" alt="sug">
+        دسته بندی کالا ها
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <li class="dropdown-content">
+          <a href="#">محبوب ترین ها</a>
+          <a href="#">محبوب ترین ها</a>
+          <a href="#">محبوب ترین ها</a>
+          <a href="#">محبوب ترین ها</a>
+          <a href="#">محبوب ترین ها</a>
+          <a href="#">محبوب ترین ها</a>
+          <a href="#">محبوب ترین ها</a>
+          <a href="#">محبوب ترین ها</a>
+          <a href="#">محبوب ترین ها</a>
+          <a href="#">محبوب ترین ها</a>
+          <a href="#">محبوب ترین ها</a>
+          <a href="#">محبوب ترین ها</a>
+          <a href="#">محبوب ترین ها</a>
+          <a href="#">محبوب ترین ها</a>
+          <a href="#">محبوب ترین ها</a>
+          <a href="#"> ترین ها</a>
+        </li>
+      </ul>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">
+        <img class="icons" src="../../../assets/icons/discount-svgrepo-com.svg" alt="sug">
+        تخفیف ها و پیشنهاد ها
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/Auth">
+        <img class="icons" src="../../../assets/icons/discount2.svg" alt="amaz">
+        شگفت انگیز ها
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/sign-up">
+        <img class="icons" src="../../../assets/icons/info-svgrepo-com.svg" alt="about">
+        درباره ی یانا هوم
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/login">
+        <img class="icons" src="../../../assets/icons/user-svgrepo-com.svg" alt="user">
+        ورود / ثبت نام
+      </a>
+    </li>
+  </ul>
+  <form class="d-flex search">
+    <input class="form-control mx-2 inner-search" type="search" placeholder="جستجو در محصولات" aria-label="Search">
+    <button class="btn btn-outline-success" type="submit">جستجو</button>
+  </form>
+</div> -->
+
+
+
+
+
+
+
+
+<!--**********-->
 <!--<li class="nav-item dropdown">-->
 <!--  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"-->
 <!--     aria-expanded="false">-->

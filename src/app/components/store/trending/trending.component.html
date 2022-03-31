@@ -4,40 +4,30 @@
   </span>
 </div>
 <div class="trending-section">
-  <div class="trending-items">
+  <div class="trending-items" *ngFor="let itemsInfo of trandingItems">
     <div class="items-img">
-      <img src="../../../../assets/images/gray-cushion.jpg" alt="gray-cushion">
+      <div class="hoverd-text">
+        <button class="add-to-card">افزودن به سبد خرید</button>
+        <!-- <span> {{itemsInfo.name}}</span> -->
+      </div>
+      <img loading="lazy" [src]="itemsInfo.image" alt="gray-cushion">
     </div>
     <span class="items-name">
-      کوسن ماندلا
+      {{itemsInfo.name}}
     </span>
     <div class="items-info">
-      <span class="items-size">50 X 70</span>
-      <span class="items-price">230,000 تومان</span>
+      <div class="items-price">
+        <span class="discount">
+          {{itemsInfo.discount}}
+        </span>
+        {{itemsInfo.price}}
+        <h5>
+          تومان
+        </h5>
+      </div>
     </div>
   </div>
-  <div class="trending-items">
-    <div class="items-img">
-      <img src="../../../../assets/images/gray-cushion.jpg" alt="gray-cushion">
-    </div>
-    <span class="items-name">
-      کوسن ماندلا
-    </span>
-    <div class="items-info">
-      <span class="items-size">50 X 70</span>
-      <span class="items-price">230,000 تومان</span>
-    </div>
-  </div>
-  <div class="trending-items">
-    <div class="items-img">
-      <img src="../../../../assets/images/gray-cushion.jpg" alt="gray-cushion">
-    </div>
-    <span class="items-name">
-      کوسن ماندلا
-    </span>
-    <div class="items-info">
-      <span class="items-size">50 X 70</span>
-      <span class="items-price">230,000 تومان</span>
-    </div>
-  </div>
+</div>
+<div class="store-handler">
+  <button routerLink="/products" class="store-btn">فروشگاه</button>
 </div>

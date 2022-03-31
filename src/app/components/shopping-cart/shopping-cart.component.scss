@@ -1,0 +1,52 @@
+@import "../../../styles.scss";
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .shopping-cock-pit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40rem;
+    width: 100%;
+    background-color: gray;
+    margin: 5rem 0;
+    position: relative;
+    padding: 2rem;
+    .title {
+      font-size: 1.6rem;
+      font-family: "iranSans";
+      font-weight: bold;
+    }
+    .factor {
+      width: 30%;
+      height: 100%;
+    }
+    .products {
+      width: 70%;
+      height: 100%;
+      text-align: right;
+      .product-box {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 50%;
+        border: 1px solid $smoothGray;
+        .product-img {
+        }
+      }
+    }
+    .product-handlers {
+      display: flex;
+      justify-content: flex-end;
+      .product-icons {
+        width: 20%;
+        height: 20%;
+        background-color: gold;
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+      }
+    }
+  }
+}

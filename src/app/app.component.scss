@@ -1,0 +1,23 @@
+@import "../styles.scss";
+.scroll-top {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  .scroll-btn {
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 0.5rem 1rem 0.3rem 1rem;
+    background-color: $tumbleweed;
+    color: $slowBlack;
+    font-family: iranSans;
+    font-size: 0.9rem;
+    transition: all .3s ease-in-out;
+    &:hover {
+      background-color: $dark-brown;
+      color: $WhiteFridge;
+      cursor: pointer;
+      font-weight: 100;
+    }
+  }
+}
