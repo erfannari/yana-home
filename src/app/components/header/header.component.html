@@ -1,107 +1,29 @@
 <div class="container-fluid p-0 m-0">
-  <nav class="Navbar p-0 ">
+  <nav class="Navbar p-0">
     <div routerLink="/hero" class="navbar-brand">
-      <h3>
-        yana-home
-      </h3>
+      <h3>yana-home</h3>
     </div>
-    <div class="navbar-links">
-      <ul class="navbar-ul">
+    <div class="navbar-links d-flex flex-row-reverse">
+      <ul class="navbar-ul" *ngFor="let nav of navbar">
         <li class="navbar-li">
-          <a>
-            دسته بندی کالا ها
-          </a>
-          <img class="icons" src="../../../assets/icons/header/hamburger-menu-svgrepo-com.svg" alt="sug">
-          <ul class="navbar-drop">
-            <li class="drop-items">
-              <a>
-                drop 1
-              </a>
-            </li>
-            <li class="drop-items">
-              <a>
-                drop 2
-              </a>
-            </li>
-            <li class="drop-items">
-              <a>
-                drop 3
-              </a>
-            </li>
-            <li class="drop-items">
-              <a>
-                drop 4
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li class="navbar-li">
-          <a>
-            تخفیف ها و پیشنهاد ها
-          </a>
-          <img class="icons" src="../../../assets/icons/header/discount-svgrepo-com.svg" alt="sug">
-        </li>
-        <li class="navbar-li">
-          <a>
-            شگفت انگیز ها
-          </a>
-          <img class="icons" src="../../../assets/icons/header/discount2.svg" alt="amaz">
-        </li>
-        <li class="navbar-li">
-          <a routerLink="/userProfile">
-            درباره ی یانا هوم
-          </a>
-          <img class="icons" src="../../../assets/icons/header/info-svgrepo-com.svg" alt="about">
-        </li>
-        <li class="navbar-li">
-          <a routerLink="/login">
-            ورود / ثبت نام
-          </a>
-          <img class="icons" src="../../../assets/icons/header/user-svgrepo-com.svg" alt="user">
-        </li>
-        <li class="navbar-li">
-          <a routerLink="/shoppingCart">
-            سبد خرید
-          </a>
-          <img class="icons" src="../../../assets/icons/header/shopping-cart-svgrepo-com.svg" alt="user">
+          <a routerLink="/login,nav.id">{{ nav.name }}</a>
+          <img class="icons" src="{{ nav.iconUrl }}" />
         </li>
       </ul>
     </div>
     <div class="navbar-search">
       <form class="d-flex justify-content-start">
-        <input class="serach-input" type="search" placeholder="جستجو در محصولات" aria-label="Search">
+        <input
+          class="serach-input"
+          type="search"
+          placeholder="جستجو در محصولات"
+          aria-label="Search"
+        />
         <button class="Btn" type="submit">جستجو</button>
       </form>
     </div>
   </nav>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <!--***********-->
 
@@ -166,13 +88,6 @@
     <button class="btn btn-outline-success" type="submit">جستجو</button>
   </form>
 </div> -->
-
-
-
-
-
-
-
 
 <!--**********-->
 <!--<li class="nav-item dropdown">-->

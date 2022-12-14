@@ -1,0 +1,169 @@
+@font-face {
+  font-family: iranSans;
+  src: url("./assets/Fonts/iranSans/iranSans/ttf/IRANSansWeb_Light.ttf");
+}
+@font-face {
+  font-family: Dosis-semiBold;
+  src: url("./assets/Fonts/Dosis/static/Dosis-SemiBold.ttf");
+}
+@font-face {
+  font-family: Dosis-Medium;
+  src: url("./assets/Fonts/Dosis/static/Dosis-Medium.ttf");
+}
+@font-face {
+  font-family: yekan;
+  src: url("./assets/Fonts/iranSans/iranSans/ttf/IRANSansWeb_Light.ttf");
+}
+@font-face {
+  font-family: Cinzel;
+  src: url("./assets/Fonts/Cinzel/static/Cinzel-Bold.ttf");
+}
+@font-face {
+  font-family: Pacifico;
+  src: url("./assets/Fonts/Pacifico/Pacifico-Regular.ttf");
+}
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+* ::selection {
+  background-color: #60411dff;
+  color: #f6f6f6;
+  font-weight: normal;
+}
+
+.container {
+  padding: 0 1rem !important;
+}
+
+body {
+  background-image: url("assets/images/movingBack.png");
+  animation: movingGradiant 1200s linear infinite alternate;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  overflow: scroll;
+}
+
+@keyframes movingGradiant {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #212121;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c9a383;
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Glass Effect
+background-color: #ffffff10;
+backdrop-filter: blur(5px);
+/*
+
+//******Colors END
+
+//***** YANA HOME COLOR PALLET
+
+/* SCSS HEX */
+/* SCSS Gradient */
+.inner-categories {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 5rem 0;
+  padding: 0 2rem;
+}
+.inner-categories .cushion-img {
+  position: relative;
+  overflow: hidden;
+  width: 40%;
+  border-radius: 10px;
+}
+.inner-categories .cushion-img .side-text {
+  max-height: 7rem;
+  max-width: 17rem;
+  background-color: #ffffff10;
+  backdrop-filter: blur(5px);
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 50px 0 0;
+  transition: all 0.3s ease-in-out;
+}
+.inner-categories .cushion-img .side-text span {
+  font-size: 3.5rem;
+  font-family: "Pacifico";
+  padding: 1rem 3rem;
+  color: #ffd700;
+}
+.inner-categories .cushion-img img {
+  height: 30rem;
+  width: 35rem;
+  border-radius: 10px;
+  transition: all 0.4s ease-in-out;
+}
+.inner-categories .cushion-img img:hover {
+  transform: scale(1.1);
+  filter: brightness(0.7);
+  cursor: pointer;
+}
+.inner-categories .user-intract {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+}
+.inner-categories .user-intract span {
+  font-size: 2.2rem;
+  line-height: 3;
+  font-weight: bold;
+  font-family: iranSans;
+  margin: 1rem 0;
+  padding: 0 4rem;
+  white-space: break-spaces;
+}
+.inner-categories .user-intract .btn {
+  border: #2f2f2f solid 0.1rem;
+  width: 40%;
+  align-self: center;
+  color: #2f2f2f;
+  font-family: iranSans;
+  font-weight: bold;
+  padding: 0.3rem 0.3rem 0.5rem 0.3rem;
+  transition: all 0.4s ease-in-out;
+}
+.inner-categories .user-intract .btn:hover {
+  background-color: #111111;
+  color: #ffd700;
+  transform: scale(1.03);
+}
+
+/*# sourceMappingURL=inner-categories.component.css.map */

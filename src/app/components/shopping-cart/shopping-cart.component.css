@@ -1,0 +1,143 @@
+@font-face {
+  font-family: iranSans;
+  src: url("./assets/Fonts/iranSans/iranSans/ttf/IRANSansWeb_Light.ttf");
+}
+@font-face {
+  font-family: Dosis-semiBold;
+  src: url("./assets/Fonts/Dosis/static/Dosis-SemiBold.ttf");
+}
+@font-face {
+  font-family: Dosis-Medium;
+  src: url("./assets/Fonts/Dosis/static/Dosis-Medium.ttf");
+}
+@font-face {
+  font-family: yekan;
+  src: url("./assets/Fonts/iranSans/iranSans/ttf/IRANSansWeb_Light.ttf");
+}
+@font-face {
+  font-family: Cinzel;
+  src: url("./assets/Fonts/Cinzel/static/Cinzel-Bold.ttf");
+}
+@font-face {
+  font-family: Pacifico;
+  src: url("./assets/Fonts/Pacifico/Pacifico-Regular.ttf");
+}
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+* ::selection {
+  background-color: #60411dff;
+  color: #f6f6f6;
+  font-weight: normal;
+}
+
+.container {
+  padding: 0 1rem !important;
+}
+
+body {
+  background-image: url("assets/images/movingBack.png");
+  animation: movingGradiant 1200s linear infinite alternate;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  overflow: scroll;
+}
+
+@keyframes movingGradiant {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #212121;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c9a383;
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Glass Effect
+background-color: #ffffff10;
+backdrop-filter: blur(5px);
+/*
+
+//******Colors END
+
+//***** YANA HOME COLOR PALLET
+
+/* SCSS HEX */
+/* SCSS Gradient */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .shopping-cock-pit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40rem;
+  width: 100%;
+  background-color: gray;
+  margin: 5rem 0;
+  position: relative;
+  padding: 2rem;
+}
+.container .shopping-cock-pit .title {
+  font-size: 1.6rem;
+  font-family: "iranSans";
+  font-weight: bold;
+}
+.container .shopping-cock-pit .factor {
+  width: 30%;
+  height: 100%;
+}
+.container .shopping-cock-pit .products {
+  width: 70%;
+  height: 100%;
+  text-align: right;
+}
+.container .shopping-cock-pit .products .product-box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 50%;
+  border: 1px solid #f6f6f6;
+}
+.container .shopping-cock-pit .product-handlers {
+  display: flex;
+  justify-content: flex-end;
+}
+.container .shopping-cock-pit .product-handlers .product-icons {
+  width: 20%;
+  height: 20%;
+  background-color: gold;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+/*# sourceMappingURL=shopping-cart.component.css.map */

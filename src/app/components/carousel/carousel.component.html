@@ -4,28 +4,40 @@
       <img class="img-slider" id="imgEl" [src]="" [alt]="" />
       <div class="floating-text">
         <span>
-          <a routerLink="/hero">
-            YANA <br> HOME
-          </a>
+          <a routerLink="/hero"> YANA HOME </a>
         </span>
       </div>
     </div>
-    <div class="content-hero">
-      <div id="yana-top" class="yana-content">
-        <img class="yana-content-img" src="../../..//assets/images/optimizes-images/plate.jpg" alt="">
-        <div class="glass-box">
-          <span class="glass-box-text">
-            Kitchen
-          </span>
-        </div>
+  </div>
+  <div class="img-box">
+    <div class="category-hero" *ngFor="let catData of categoryImg">
+      <img class="category-hero-img" src="{{ catData.url }}" />
+      <span class="category-name">{{catData.name}}</span>
+    </div>
+  </div>
+  <div class="content-hero">
+    <!-- <div id="yana-top" class="yana-content">
+      <img
+        class="yana-content-img"
+        src="../../../assets/images/optimizes-images/plate.jpg"
+        alt=""
+      />
+      <div class="glass-box">
+        <span class="glass-box-text"> Kitchen </span>
       </div>
-      <div id="yana-down" class="yana-content">
-        <div class="gif-player">
-          <span class="gif-text">
-            Rest <br> With <br> Us
-          </span>
-          <img class="gif" src="../../../assets/videos/YANAHOME.gif" alt="yana-home-gif">
-        </div>
+    </div> -->
+    <div id="yana-down" class="yana-content">
+      <div class="gif-player">
+        <span class="gif-text">
+          Rest <br />
+          With <br />
+          Us
+        </span>
+        <img
+          class="gif"
+          src="../../../assets/videos/YANAHOME.gif"
+          alt="yana-home-gif"
+        />
       </div>
     </div>
   </div>

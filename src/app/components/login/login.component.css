@@ -1,0 +1,268 @@
+@font-face {
+  font-family: iranSans;
+  src: url("./assets/Fonts/iranSans/iranSans/ttf/IRANSansWeb_Light.ttf");
+}
+@font-face {
+  font-family: Dosis-semiBold;
+  src: url("./assets/Fonts/Dosis/static/Dosis-SemiBold.ttf");
+}
+@font-face {
+  font-family: Dosis-Medium;
+  src: url("./assets/Fonts/Dosis/static/Dosis-Medium.ttf");
+}
+@font-face {
+  font-family: yekan;
+  src: url("./assets/Fonts/iranSans/iranSans/ttf/IRANSansWeb_Light.ttf");
+}
+@font-face {
+  font-family: Cinzel;
+  src: url("./assets/Fonts/Cinzel/static/Cinzel-Bold.ttf");
+}
+@font-face {
+  font-family: Pacifico;
+  src: url("./assets/Fonts/Pacifico/Pacifico-Regular.ttf");
+}
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+* ::selection {
+  background-color: #60411dff;
+  color: #f6f6f6;
+  font-weight: normal;
+}
+
+.container {
+  padding: 0 1rem !important;
+}
+
+body {
+  background-image: url("assets/images/movingBack.png");
+  animation: movingGradiant 1200s linear infinite alternate;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  overflow: scroll;
+}
+
+@keyframes movingGradiant {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #212121;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c9a383;
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Glass Effect
+background-color: #ffffff10;
+backdrop-filter: blur(5px);
+/*
+
+//******Colors END
+
+//***** YANA HOME COLOR PALLET
+
+/* SCSS HEX */
+/* SCSS Gradient */
+.cock-pit {
+  height: 100vh;
+  margin-top: -4.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-back {
+  position: absolute;
+  z-index: -10;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.enter-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.enter-text span {
+  font-family: iranSans;
+  font-size: 3rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+  opacity: 0.8;
+  background: linear-gradient(to right, #ffb820, #fb6401);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.login {
+  background-color: #ffff;
+  padding: 1.5rem 2.5rem;
+  border-radius: 10px;
+}
+
+.inputs {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: right;
+}
+
+.form {
+  padding: 1rem;
+}
+
+.labels {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.labels .label-text {
+  font-family: iranSans;
+  font-weight: bold;
+  margin: 1rem 0;
+  opacity: 0.9;
+}
+.labels ::placeholder {
+  font-family: iranSans;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+}
+
+.entry {
+  text-align: right;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  font-family: "Dosis-semiBold";
+  letter-spacing: 1px;
+  opacity: 0.9;
+  background-color: #dddddd;
+  height: 2rem;
+  padding: 0 0.5rem 0.1rem 0.5rem;
+}
+
+.option-text {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0.7rem 0;
+}
+.option-text p {
+  font-family: iranSans;
+  margin: 0;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+  opacity: 0.8;
+  font-weight: bold;
+}
+
+.pass-checkbox,
+.remember-checkbox {
+  margin-left: 0.6rem;
+}
+
+.submit-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.submit-button {
+  border: none;
+  width: 100%;
+  background: linear-gradient(to right, #fe8c00, #f83600);
+  border-radius: 15px;
+  padding: 5px 0px 10px 0;
+  font-family: iranSans;
+  color: #ffffff;
+}
+.submit-button:hover {
+  animation: pulse 1.8s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.login-option {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.login-option .login-icon {
+  height: 25px;
+  width: 25px;
+  transition: all 0.1s;
+}
+.login-option .login-icon:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.or {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.or span {
+  font-size: 0.9rem;
+  font-family: iranSans;
+  opacity: 0.9;
+}
+
+.forgot-pass a {
+  font-size: 0.7rem;
+  font-family: iranSans;
+  font-weight: bold;
+  letter-spacing: 1px;
+  opacity: 0.8;
+}
+
+.sign-up {
+  text-align: center;
+  margin: 1rem 0;
+}
+.sign-up span {
+  font-family: iranSans;
+  font-size: 0.7rem;
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+/*# sourceMappingURL=login.component.css.map */

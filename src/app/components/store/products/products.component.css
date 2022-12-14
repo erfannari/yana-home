@@ -1,0 +1,184 @@
+@font-face {
+  font-family: iranSans;
+  src: url("./assets/Fonts/iranSans/iranSans/ttf/IRANSansWeb_Light.ttf");
+}
+@font-face {
+  font-family: Dosis-semiBold;
+  src: url("./assets/Fonts/Dosis/static/Dosis-SemiBold.ttf");
+}
+@font-face {
+  font-family: Dosis-Medium;
+  src: url("./assets/Fonts/Dosis/static/Dosis-Medium.ttf");
+}
+@font-face {
+  font-family: yekan;
+  src: url("./assets/Fonts/iranSans/iranSans/ttf/IRANSansWeb_Light.ttf");
+}
+@font-face {
+  font-family: Cinzel;
+  src: url("./assets/Fonts/Cinzel/static/Cinzel-Bold.ttf");
+}
+@font-face {
+  font-family: Pacifico;
+  src: url("./assets/Fonts/Pacifico/Pacifico-Regular.ttf");
+}
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+* ::selection {
+  background-color: #60411dff;
+  color: #f6f6f6;
+  font-weight: normal;
+}
+
+.container {
+  padding: 0 1rem !important;
+}
+
+body {
+  background-image: url("assets/images/movingBack.png");
+  animation: movingGradiant 1200s linear infinite alternate;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  overflow: scroll;
+}
+
+@keyframes movingGradiant {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #212121;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c9a383;
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Glass Effect
+background-color: #ffffff10;
+backdrop-filter: blur(5px);
+/*
+
+//******Colors END
+
+//***** YANA HOME COLOR PALLET
+
+/* SCSS HEX */
+/* SCSS Gradient */
+.store-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-box {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 20rem;
+  padding-bottom: 5px;
+  width: 13rem;
+  margin: 2rem 3rem;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  transition-duration: 0.3s;
+  background-color: #ffff;
+}
+.product-box img {
+  height: 75%;
+  filter: brightness(0.9);
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+.product-box:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.description {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+.description span {
+  font-family: iranSans, sans-serif;
+  color: #212121;
+  font-weight: bold;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  margin: 10px;
+}
+.price .discount {
+  background-color: #ff0000;
+  color: #ffff;
+  border-radius: 15px;
+  padding: 0 7px;
+  font-family: iranSans;
+  font-size: 0.8rem;
+  opacity: 0.9;
+}
+.price .product-price {
+  font-size: 0.9rem;
+  font-family: iranSans;
+  font-weight: bold;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
+.add-icon {
+  width: 15px;
+  height: 20px;
+}
+.add-icon:hover {
+  cursor: pointer;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+.rating img {
+  height: 15px;
+  width: 15px;
+}
+.rating span {
+  font-family: iranSans;
+  margin: 0 5px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=products.component.css.map */
