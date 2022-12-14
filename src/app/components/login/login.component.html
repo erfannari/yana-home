@@ -4,7 +4,7 @@
     <div class="enter-text">
       <span>ورود</span>
     </div>
-    <form class="form">
+    <form class="form" [(ngModel)] ="userLogin" (ngSubmit)= "userEntry()">
       <div class="inputs">
         <div class="email form-group ">
           <label for="email" class="labels">
@@ -12,7 +12,7 @@
              (فارسی) نام کاربری
             </span>
             <input type="email" class="entry" placeholder="نام کاربری خود را وارد کنید" id="email" name="email" required
-              ngModel />
+              [(ngModel)]= "userLogin.email" />
           </label>
         </div>
         <div class="password form-group">
@@ -21,7 +21,7 @@
               گذرواژه
             </span>
             <input type="password" class="entry" placeholder="گذرواژه خود را وارد کنید" id="password" name="password"
-              required ngModel/>
+              required [(ngModel)]= "userLogin.password"/>
           </label>
         </div>
       </div>
@@ -45,9 +45,7 @@
         </label>
       </div>
       <div class="submit-area">
-        <button class="submit-button" id="login-btn" type="submit">
-          ورود
-        </button>
+        <input class="submit-button" id="login-btn" type="submit" value="ورود">
       </div>
     </form>
     <div class="or">

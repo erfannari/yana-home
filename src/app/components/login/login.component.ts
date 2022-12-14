@@ -13,10 +13,14 @@ export class LoginComponent implements OnInit {
     } else {
       passInput.type = 'password';
     }
-    console.log('kirkhar');
   }
-
   constructor() {}
 
+  userLogin = {
+    email: '',
+    password: '',
+  };
   ngOnInit(): void {}
+
+  userEntry () {}
 }

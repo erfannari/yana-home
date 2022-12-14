@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 // import { SwiperModule } from 'swiper/angular';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { StoreComponent } from './components/store/store.component';
@@ -40,6 +41,8 @@ import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.
     BrowserModule,
     AppRoutingModule,
     CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
     // [SwiperModule]
   ],
   providers: [],
