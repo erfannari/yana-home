@@ -48,6 +48,53 @@ export class CarouselComponent implements OnInit {
       url: '../../../assets/images/optimizes-images/walling.jpg',
     },
   ];
+  categoryImg: any[] = [
+    {
+      id:1,
+      name: 'Pillow',
+      url: '../../../assets/images/optimizes-images/pillow.jpg'
+    },
+    {
+      id:2,
+      name: 'Plates',
+      url: '../../../assets/images/optimizes-images/plate.jpg'
+    },
+    {
+      id:3,
+      name: 'Curtain',
+      url: '../../../assets/images/optimizes-images/Curtain2.jpg'
+    },
+    {
+      id:4,
+      name: 'Pots',
+      url: '../../../assets/images/optimizes-images/flowerPot.jpg'
+    },
+    {
+      id:5,
+      name: 'Cushions',
+      url: '../../../assets/images/optimizes-images/cushion.jpg'
+    },
+    {
+      id:6,
+      name: 'Tables',
+      url: '../../../assets/images/optimizes-images/yalda1.jpg'
+    },
+    {
+      id:7,
+      name: 'Kitchen',
+      url: '../../../assets/images/optimizes-images/table.jpg'
+    },
+    {
+      id:7,
+      name: 'Kitchen',
+      url: '../../../assets/images/optimizes-images/table.jpg'
+    },
+    {
+      id:7,
+      name: 'Kitchen',
+      url: '../../../assets/images/optimizes-images/table.jpg'
+    }
+  ]
   counter = 0;
   imgEl: any;
   slider(): any {

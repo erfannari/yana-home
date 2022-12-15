@@ -29,7 +29,7 @@
       flex-direction: row-reverse;
       align-items: center;
       list-style: none;
-      margin: 1rem 0;
+      margin: 1rem;
       padding: 0;
       .navbar-li {
         margin: 0 .7rem;
@@ -50,14 +50,9 @@
         a {
           font-family: iranSans;
           color: $slowBlack;
-          font-size: 0.8rem;
+          font-size: 0.9rem;
           opacity: 0.9;
           white-space: nowrap;
-        }
-        .navbar-drop {
-          display: none;
-          .drop-items {
-          }
         }
       }
     }
