@@ -6,7 +6,7 @@
     <div class="navbar-links d-flex flex-row-reverse">
       <ul class="navbar-ul" *ngFor="let nav of navbar">
         <li class="navbar-li">
-          <a routerLink="/login,nav.id">{{ nav.name }}</a>
+          <a routerLink="{{nav.navRoute}}">{{ nav.name }}</a>
           <img class="icons" src="{{ nav.iconUrl }}" />
         </li>
       </ul>
